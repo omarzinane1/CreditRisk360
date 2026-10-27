@@ -1,0 +1,84 @@
+{
+  "model_name": "CreditRisk360",
+  "model_version": "v1.0.0",
+  "threshold_version": "thresholds-v1",
+  "trained_at": "2026-10-27T22:08:25.934588+00:00",
+  "algorithm": "E3 - SMOTE (Régression Logistique)",
+  "score_type": "probability_prior_corrected_approx",
+  "features": [
+    "RevolvingUtilizationOfUnsecuredLines",
+    "age",
+    "NumberOfTime30-59DaysPastDueNotWorse",
+    "DebtRatio",
+    "MonthlyIncome",
+    "NumberOfOpenCreditLinesAndLoans",
+    "NumberOfTimes90DaysLate",
+    "NumberRealEstateLoansOrLines",
+    "NumberOfTime60-89DaysPastDueNotWorse",
+    "NumberOfDependents"
+  ],
+  "feature_schema_hash": "d603419314fbe2b0345a71a7f6515a4031f83618919d95683d1d19ac343f9ceb",
+  "dataset_file": "cs-training.csv",
+  "dataset_hash": "1bd46da486a5708c58c7b01a034fae2a13b327f6f7b62ea7ba4fe3b5824b24ac",
+  "random_state": 42,
+  "split": {
+    "proportions": "70/15/15",
+    "stratifie": true,
+    "train": 104573,
+    "validation": 22409,
+    "test": 22409
+  },
+  "prevalence": {
+    "train": 0.06699626098514913,
+    "validation": 0.06702664108170824,
+    "test": 0.06698201615422375
+  },
+  "preprocessing": {
+    "valeurs_invalides": "âge hors [18, 120] et retards égaux à 96 ou 98 remplacés par NaN",
+    "indicateurs": [
+      "Retards_manquants",
+      "Revenu_manquant",
+      "Dependants_manquant"
+    ],
+    "bornes_ecretage": {
+      "RevolvingUtilizationOfUnsecuredLines": 1.09510916684,
+      "DebtRatio": 4949.559999999998,
+      "MonthlyIncome": 25019.670000000086,
+      "NumberOfOpenCreditLinesAndLoans": 35.0,
+      "NumberRealEstateLoansOrLines": 9.0,
+      "NumberOfDependents": 6.0,
+      "NumberOfTime30-59DaysPastDueNotWorse": 6.0,
+      "NumberOfTime60-89DaysPastDueNotWorse": 4.0,
+      "NumberOfTimes90DaysLate": 6.0
+    },
+    "log1p": [
+      "DebtRatio"
+    ],
+    "imputation": "médiane apprise sur le train",
+    "standardisation": "StandardScaler appris sur le train"
+  },
+  "smote": {
+    "sampling_strategy": "auto",
+    "k_neighbors": 5,
+    "random_state": 42
+  },
+  "prior_correction": {
+    "decalage_logit": -2.633772396715972,
+    "integre_dans_intercept": true
+  },
+  "thresholds": {
+    "faible_modere": 0.04088999812923078,
+    "modere_eleve": 0.1124383102929705,
+    "decision": 0.1124383102929705,
+    "critere_decision": "Recall maximal avec Precision >= 30% (validation)",
+    "critere_faible": "Plus grand seuil conservant au moins 85% des défauts au-dessus (validation)"
+  },
+  "libraries": {
+    "python": "3.13.5",
+    "scikit-learn": "1.6.1",
+    "imbalanced-learn": "0.13.0",
+    "pandas": "2.2.3",
+    "numpy": "2.1.3",
+    "joblib": "1.4.2"
+  }
+}

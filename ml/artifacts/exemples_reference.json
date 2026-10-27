@@ -1,0 +1,95 @@
+{
+  "model_version": "v1.0.0",
+  "exemples": [
+    {
+      "description": "profil complet",
+      "index_original": 68606,
+      "features": {
+        "RevolvingUtilizationOfUnsecuredLines": 1.002657114,
+        "age": 81,
+        "NumberOfTime30-59DaysPastDueNotWorse": 7,
+        "DebtRatio": 0.400659934,
+        "MonthlyIncome": 10000,
+        "NumberOfOpenCreditLinesAndLoans": 14,
+        "NumberOfTimes90DaysLate": 1,
+        "NumberRealEstateLoansOrLines": 3,
+        "NumberOfTime60-89DaysPastDueNotWorse": 1,
+        "NumberOfDependents": 0
+      },
+      "risk_score": 0.9462329858560093,
+      "risk_level": "élevé"
+    },
+    {
+      "description": "profil complet",
+      "index_original": 109433,
+      "features": {
+        "RevolvingUtilizationOfUnsecuredLines": 0,
+        "age": 53,
+        "NumberOfTime30-59DaysPastDueNotWorse": 0,
+        "DebtRatio": 0.803005592,
+        "MonthlyIncome": 8583,
+        "NumberOfOpenCreditLinesAndLoans": 12,
+        "NumberOfTimes90DaysLate": 0,
+        "NumberRealEstateLoansOrLines": 2,
+        "NumberOfTime60-89DaysPastDueNotWorse": 0,
+        "NumberOfDependents": 1
+      },
+      "risk_score": 0.015096104355307094,
+      "risk_level": "faible"
+    },
+    {
+      "description": "profil complet",
+      "index_original": 97156,
+      "features": {
+        "RevolvingUtilizationOfUnsecuredLines": 1.349255721,
+        "age": 47,
+        "NumberOfTime30-59DaysPastDueNotWorse": 1,
+        "DebtRatio": 0.296616271,
+        "MonthlyIncome": 2777,
+        "NumberOfOpenCreditLinesAndLoans": 2,
+        "NumberOfTimes90DaysLate": 6,
+        "NumberRealEstateLoansOrLines": 0,
+        "NumberOfTime60-89DaysPastDueNotWorse": 1,
+        "NumberOfDependents": 2
+      },
+      "risk_score": 0.9956083323454257,
+      "risk_level": "élevé"
+    },
+    {
+      "description": "revenu manquant",
+      "index_original": 146343,
+      "features": {
+        "RevolvingUtilizationOfUnsecuredLines": 0.027961717,
+        "age": 78,
+        "NumberOfTime30-59DaysPastDueNotWorse": 0,
+        "DebtRatio": 38,
+        "MonthlyIncome": null,
+        "NumberOfOpenCreditLinesAndLoans": 5,
+        "NumberOfTimes90DaysLate": 0,
+        "NumberRealEstateLoansOrLines": 0,
+        "NumberOfTime60-89DaysPastDueNotWorse": 0,
+        "NumberOfDependents": 0
+      },
+      "risk_score": 0.007323291093655841,
+      "risk_level": "faible"
+    },
+    {
+      "description": "revenu et personnes à charge manquants",
+      "index_original": 138222,
+      "features": {
+        "RevolvingUtilizationOfUnsecuredLines": 0.037400064,
+        "age": 86,
+        "NumberOfTime30-59DaysPastDueNotWorse": 0,
+        "DebtRatio": 1054,
+        "MonthlyIncome": null,
+        "NumberOfOpenCreditLinesAndLoans": 9,
+        "NumberOfTimes90DaysLate": 0,
+        "NumberRealEstateLoansOrLines": 1,
+        "NumberOfTime60-89DaysPastDueNotWorse": 0,
+        "NumberOfDependents": null
+      },
+      "risk_score": 0.002899210866962843,
+      "risk_level": "faible"
+    }
+  ]
+}

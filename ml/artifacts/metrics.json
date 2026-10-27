@@ -1,0 +1,157 @@
+{
+  "modele": "E3 - SMOTE",
+  "seuil_decision": 0.1124383102929705,
+  "validation": {
+    "Recall (classe 1)": 0.6364846870838882,
+    "Precision (classe 1)": 0.30100755667506296,
+    "F1 (classe 1)": 0.40872167592988456,
+    "Spécificité": 0.8938154685033721,
+    "Accuracy": 0.8765674505778928,
+    "Average Precision": 0.3913763988443241,
+    "ROC-AUC": 0.8624152984394717,
+    "Score de Brier": 0.051439113720110084,
+    "Alertes (% des clients)": 14.172876969074924,
+    "VP": 956,
+    "FP": 2220,
+    "FN": 546,
+    "VN": 18687
+  },
+  "test": {
+    "Recall (classe 1)": 0.6242504996668887,
+    "Precision (classe 1)": 0.30481457384515287,
+    "F1 (classe 1)": 0.4096174863387978,
+    "Spécificité": 0.8977903194949302,
+    "Accuracy": 0.8794680708643848,
+    "Average Precision": 0.39690407632526,
+    "ROC-AUC": 0.8573466327594627,
+    "Score de Brier": 0.05097634434633954,
+    "Alertes (% des clients)": 13.717702708733098,
+    "VP": 937,
+    "FP": 2137,
+    "FN": 564,
+    "VN": 18771
+  },
+  "intervalles_confiance_test": {
+    "Recall (classe 1)": [
+      0.5987920468680683,
+      0.6474328512534759
+    ],
+    "Precision (classe 1)": [
+      0.2872064346953047,
+      0.32093915013555147
+    ],
+    "Average Precision": [
+      0.3695328098652976,
+      0.42437064674615754
+    ]
+  },
+  "niveaux_risque_validation": {
+    "faible": {
+      "Clients": 14851,
+      "Défauts": 225,
+      "Taux_de_défaut": 1.5150494916167263,
+      "% des clients": 66.27247980722031,
+      "% des défauts": 14.980026631158456
+    },
+    "modéré": {
+      "Clients": 4382,
+      "Défauts": 321,
+      "Taux_de_défaut": 7.325422181652214,
+      "% des clients": 19.554643223704762,
+      "% des défauts": 21.371504660452732
+    },
+    "élevé": {
+      "Clients": 3176,
+      "Défauts": 956,
+      "Taux_de_défaut": 30.100755667506295,
+      "% des clients": 14.172876969074924,
+      "% des défauts": 63.64846870838882
+    }
+  },
+  "niveaux_risque_test": {
+    "faible": {
+      "Clients": 14881,
+      "Défauts": 238,
+      "Taux_de_défaut": 1.5993548820643775,
+      "% des clients": 66.40635458967378,
+      "% des défauts": 15.856095936042639
+    },
+    "modéré": {
+      "Clients": 4454,
+      "Défauts": 326,
+      "Taux_de_défaut": 7.319263583295914,
+      "% des clients": 19.87594270159311,
+      "% des défauts": 21.71885409726849
+    },
+    "élevé": {
+      "Clients": 3074,
+      "Défauts": 937,
+      "Taux_de_défaut": 30.481457384515288,
+      "% des clients": 13.717702708733098,
+      "% des défauts": 62.425049966688874
+    }
+  },
+  "comparaison_experiences_validation_seuil_0_5": {
+    "E1 - Baseline": {
+      "Recall (classe 1)": 0.1804260985352863,
+      "Precision (classe 1)": 0.5878524945770065,
+      "F1 (classe 1)": 0.2761079979623026,
+      "Average Precision": 0.38771064832122226,
+      "ROC-AUC": 0.8591767472932091,
+      "Accuracy": 0.9365879780445356,
+      "Spécificité": 0.99091213469173,
+      "VP": 271,
+      "FP": 190,
+      "FN": 1231,
+      "VN": 20717
+    },
+    "E2 - class_weight": {
+      "Recall (classe 1)": 0.7603195739014648,
+      "Precision (classe 1)": 0.21889975081464444,
+      "F1 (classe 1)": 0.33993153743116533,
+      "Average Precision": 0.3924022297331231,
+      "ROC-AUC": 0.8631965147536579,
+      "Accuracy": 0.8020884466062743,
+      "Spécificité": 0.8050892045726312,
+      "VP": 1142,
+      "FP": 4075,
+      "FN": 360,
+      "VN": 16832
+    },
+    "E3 - SMOTE": {
+      "Recall (classe 1)": 0.7583222370173103,
+      "Precision (classe 1)": 0.21625213594076323,
+      "F1 (classe 1)": 0.3365342000295465,
+      "Average Precision": 0.3913763988443241,
+      "ROC-AUC": 0.8624152984394717,
+      "Accuracy": 0.7995894506671427,
+      "Spécificité": 0.8025541684603243,
+      "VP": 1139,
+      "FP": 4128,
+      "FN": 363,
+      "VN": 16779
+    }
+  },
+  "calibration_validation": {
+    "E1 (baseline)": {
+      "Probabilité moyenne prédite": 0.06789374859893543,
+      "Taux de défaut observé": 0.06702664108170824,
+      "Score de Brier": 0.05057729020731436
+    },
+    "E3 - SMOTE brut": {
+      "Probabilité moyenne prédite": 0.3400766792189748,
+      "Taux de défaut observé": 0.06702664108170824,
+      "Score de Brier": 0.14626689700524928
+    },
+    "E3 - SMOTE corrigé": {
+      "Probabilité moyenne prédite": 0.07205247112477675,
+      "Taux de défaut observé": 0.06702664108170824,
+      "Score de Brier": 0.051439113720110084
+    },
+    "Référence (prévalence constante)": {
+      "Probabilité moyenne prédite": 0.06702664108170824,
+      "Taux de défaut observé": 0.06702664108170824,
+      "Score de Brier": 0.06253407046701209
+    }
+  }
+}
