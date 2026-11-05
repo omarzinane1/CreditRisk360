@@ -1,0 +1,15 @@
+.venv/
+.git/
+.vscode/
+**/__pycache__/
+**/*.pyc
+**/.ipynb_checkpoints/
+
+notebooks/
+data/
+backend/data/
+
+*.sqlite3
+*.db
+
+README.md

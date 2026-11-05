@@ -1,0 +1,9 @@
+﻿fastapi==0.115.12
+imbalanced-learn==0.13.0
+joblib==1.6.0
+numpy==2.4.6
+pandas==3.1.1
+scikit-learn==1.6.1
+scipy==1.17.1
+threadpoolctl==3.7.0
+uvicorn==0.34.2

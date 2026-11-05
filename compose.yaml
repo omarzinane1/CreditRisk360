@@ -1,0 +1,19 @@
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+
+    container_name: creditrisk360-backend
+
+    ports:
+      - "127.0.0.1:8000:8000"
+
+    environment:
+      CREDITRISK360_DB_PATH: /project/backend/data/creditrisk360.sqlite3
+
+    volumes:
+      - ./backend/data:/project/backend/data
+
+    restart: unless-stopped
