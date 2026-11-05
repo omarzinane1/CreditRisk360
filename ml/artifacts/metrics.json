@@ -1,44 +1,98 @@
 {
   "modele": "E3 - SMOTE",
-  "seuil_decision": 0.1124383102929705,
+  "seuil_decision": 0.12688759665233645,
   "validation": {
-    "Recall (classe 1)": 0.6364846870838882,
-    "Precision (classe 1)": 0.30100755667506296,
-    "F1 (classe 1)": 0.40872167592988456,
-    "Spécificité": 0.8938154685033721,
-    "Accuracy": 0.8765674505778928,
+    "Recall (classe 1)": 0.6005326231691078,
+    "Precision (classe 1)": 0.3285974499089253,
+    "F1 (classe 1)": 0.4247704261831881,
+    "Spécificité": 0.9118477065097814,
+    "Accuracy": 0.890981302155384,
     "Average Precision": 0.3913763988443241,
     "ROC-AUC": 0.8624152984394717,
     "Score de Brier": 0.051439113720110084,
-    "Alertes (% des clients)": 14.172876969074924,
-    "VP": 956,
-    "FP": 2220,
-    "FN": 546,
-    "VN": 18687
+    "Alertes (% des clients)": 12.249542594493285,
+    "VP": 902,
+    "FP": 1843,
+    "FN": 600,
+    "VN": 19064
+  },
+  "comparaison_seuils_validation": {
+    "E3 brut (seuil 0,5)": {
+      "Seuil": 0.5,
+      "Accuracy": 0.7995894506671427,
+      "Recall": 0.7583222370173103,
+      "Precision": 0.21625213594076323,
+      "F1": 0.3365342000295465,
+      "Alertes (%)": 23.50394930608238,
+      "VP": 1139,
+      "FP": 4128,
+      "FN": 363,
+      "VN": 16779
+    },
+    "E3 corrigé (Precision >= 30 %)": {
+      "Seuil": 0.1124383102929705,
+      "Accuracy": 0.8765674505778928,
+      "Recall": 0.6364846870838882,
+      "Precision": 0.30100755667506296,
+      "F1": 0.40872167592988456,
+      "Alertes (%)": 14.172876969074924,
+      "VP": 956,
+      "FP": 2220,
+      "FN": 546,
+      "VN": 18687
+    },
+    "E3 corrigé (Accuracy, Recall >= 60 %)": {
+      "Seuil": 0.12688759665233645,
+      "Accuracy": 0.890981302155384,
+      "Recall": 0.6005326231691078,
+      "Precision": 0.3285974499089253,
+      "F1": 0.4247704261831881,
+      "Alertes (%)": 12.249542594493285,
+      "VP": 902,
+      "FP": 1843,
+      "FN": 600,
+      "VN": 19064
+    }
+  },
+  "comparaison_seuils_test_descriptive": {
+    "Seuil Precision >= 30 %": {
+      "Accuracy": 0.8794680708643848,
+      "Recall": 0.6242504996668887,
+      "Precision": 0.30481457384515287,
+      "Faux positifs": 2137.0,
+      "Vrais positifs": 937.0
+    },
+    "Seuil Accuracy / Recall >= 60 %": {
+      "Accuracy": 0.8928109241822482,
+      "Recall": 0.5816122584943371,
+      "Precision": 0.3298073290517567,
+      "Faux positifs": 1774.0,
+      "Vrais positifs": 873.0
+    }
   },
   "test": {
-    "Recall (classe 1)": 0.6242504996668887,
-    "Precision (classe 1)": 0.30481457384515287,
-    "F1 (classe 1)": 0.4096174863387978,
-    "Spécificité": 0.8977903194949302,
-    "Accuracy": 0.8794680708643848,
+    "Recall (classe 1)": 0.5816122584943371,
+    "Precision (classe 1)": 0.3298073290517567,
+    "F1 (classe 1)": 0.42092574734811955,
+    "Spécificité": 0.9151520948919074,
+    "Accuracy": 0.8928109241822482,
     "Average Precision": 0.39690407632526,
     "ROC-AUC": 0.8573466327594627,
     "Score de Brier": 0.05097634434633954,
-    "Alertes (% des clients)": 13.717702708733098,
-    "VP": 937,
-    "FP": 2137,
-    "FN": 564,
-    "VN": 18771
+    "Alertes (% des clients)": 11.812218305145255,
+    "VP": 873,
+    "FP": 1774,
+    "FN": 628,
+    "VN": 19134
   },
   "intervalles_confiance_test": {
     "Recall (classe 1)": [
-      0.5987920468680683,
-      0.6474328512534759
+      0.5568245219222024,
+      0.6061025782018225
     ],
     "Precision (classe 1)": [
-      0.2872064346953047,
-      0.32093915013555147
+      0.31066717747056966,
+      0.3479587943533003
     ],
     "Average Precision": [
       0.3695328098652976,
@@ -54,18 +108,18 @@
       "% des défauts": 14.980026631158456
     },
     "modéré": {
-      "Clients": 4382,
-      "Défauts": 321,
-      "Taux_de_défaut": 7.325422181652214,
-      "% des clients": 19.554643223704762,
-      "% des défauts": 21.371504660452732
+      "Clients": 4813,
+      "Défauts": 375,
+      "Taux_de_défaut": 7.7913982962809065,
+      "% des clients": 21.4779775982864,
+      "% des défauts": 24.96671105193076
     },
     "élevé": {
-      "Clients": 3176,
-      "Défauts": 956,
-      "Taux_de_défaut": 30.100755667506295,
-      "% des clients": 14.172876969074924,
-      "% des défauts": 63.64846870838882
+      "Clients": 2745,
+      "Défauts": 902,
+      "Taux_de_défaut": 32.85974499089253,
+      "% des clients": 12.249542594493285,
+      "% des défauts": 60.05326231691078
     }
   },
   "niveaux_risque_test": {
@@ -77,18 +131,18 @@
       "% des défauts": 15.856095936042639
     },
     "modéré": {
-      "Clients": 4454,
-      "Défauts": 326,
-      "Taux_de_défaut": 7.319263583295914,
-      "% des clients": 19.87594270159311,
-      "% des défauts": 21.71885409726849
+      "Clients": 4881,
+      "Défauts": 390,
+      "Taux_de_défaut": 7.990165949600492,
+      "% des clients": 21.781427105180953,
+      "% des défauts": 25.982678214523652
     },
     "élevé": {
-      "Clients": 3074,
-      "Défauts": 937,
-      "Taux_de_défaut": 30.481457384515288,
-      "% des clients": 13.717702708733098,
-      "% des défauts": 62.425049966688874
+      "Clients": 2647,
+      "Défauts": 873,
+      "Taux_de_défaut": 32.98073290517567,
+      "% des clients": 11.812218305145255,
+      "% des défauts": 58.161225849433706
     }
   },
   "comparaison_experiences_validation_seuil_0_5": {

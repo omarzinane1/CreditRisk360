@@ -1,8 +1,8 @@
 {
   "model_name": "CreditRisk360",
   "model_version": "v1.0.0",
-  "threshold_version": "thresholds-v1",
-  "trained_at": "2026-10-27T22:08:25.934588+00:00",
+  "threshold_version": "thresholds-v2",
+  "trained_at": "2026-11-04T23:44:55.181732+00:00",
   "algorithm": "E3 - SMOTE (Régression Logistique)",
   "score_type": "probability_prior_corrected_approx",
   "features": [
@@ -68,9 +68,11 @@
   },
   "thresholds": {
     "faible_modere": 0.04088999812923078,
-    "modere_eleve": 0.1124383102929705,
-    "decision": 0.1124383102929705,
-    "critere_decision": "Recall maximal avec Precision >= 30% (validation)",
+    "modere_eleve": 0.12688759665233645,
+    "decision": 0.12688759665233645,
+    "recall_min_decision": 0.6,
+    "precision_min_decision": 0.3,
+    "critere_decision": "Accuracy max avec Recall >= 60% et Precision >= 30% (validation)",
     "critere_faible": "Plus grand seuil conservant au moins 85% des défauts au-dessus (validation)"
   },
   "libraries": {

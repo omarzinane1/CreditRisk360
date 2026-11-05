@@ -1,0 +1,29 @@
+# Environnement Python
+.venv/
+venv/
+
+# Fichiers temporaires Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Configuration locale
+.env
+.env.*
+!.env.example
+
+# Bases de données locales
+*.db
+*.sqlite
+*.sqlite3
+
+# Fichiers temporaires
+*.log
+.pytest_cache/
+.vscode/
+
+# Dataset Kaggle
+data/raw/*.csv
